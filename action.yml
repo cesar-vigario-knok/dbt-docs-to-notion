@@ -29,6 +29,7 @@ inputs:
     required: true
 runs:
   using: 'composite'
+  timeout-minutes: 120
   steps: 
     - name: Install Python
       uses: "actions/setup-python@v4"
