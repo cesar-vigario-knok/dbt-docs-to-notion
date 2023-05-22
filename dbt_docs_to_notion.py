@@ -18,7 +18,7 @@ def make_request(endpoint, querystring='', method='GET', **request_kwargs):
   headers = {
     'Authorization': NOTION_TOKEN,
     'Content-Type': 'application/json',
-    'Notion-Version': '2022-02-22'
+    'Notion-Version': '2022-06-28'
   }
   url = f'https://api.notion.com/v1/{endpoint}{querystring}'
   resp = requests.request(method, url, headers=headers, **request_kwargs)
